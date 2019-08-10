@@ -90,26 +90,30 @@
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_PIN
-
-/* Using Hardware Crypto drivers */
-
-
-/* Using WiFi */
-
 #define RT_USING_WIFI
 #define RT_WLAN_DEVICE_STA_NAME "wlan0"
 #define RT_WLAN_DEVICE_AP_NAME "wlan1"
-#define RT_WLAN_DEFAULT_PROT "lwip"
-#define RT_WLAN_SCAN_WAIT_MS 10000
-#define RT_WLAN_CONNECT_WAIT_MS 10000
 #define RT_WLAN_SSID_MAX_LENGTH 32
 #define RT_WLAN_PASSWORD_MAX_LENGTH 32
+#define RT_WLAN_DEV_EVENT_NUM 2
+#define RT_WLAN_MANAGE_ENABLE
+#define RT_WLAN_SCAN_WAIT_MS 10000
+#define RT_WLAN_CONNECT_WAIT_MS 10000
 #define RT_WLAN_SCAN_SORT
+#define RT_WLAN_MSH_CMD_ENABLE
+#define RT_WLAN_AUTO_CONNECT_ENABLE
+#define RT_WLAN_CFG_ENABLE
 #define RT_WLAN_CFG_INFO_MAX 3
+#define RT_WLAN_PROT_ENABLE
+#define RT_WLAN_PROT_NAME_LEN 8
+#define RT_WLAN_PROT_MAX 2
+#define RT_WLAN_DEFAULT_PROT "lwip"
+#define RT_WLAN_PROT_LWIP_ENABLE
+#define RT_WLAN_PROT_LWIP_NAME "lwip"
+#define RT_WLAN_WORK_THREAD_ENABLE
 #define RT_WLAN_WORKQUEUE_THREAD_NAME "wlan_job"
 #define RT_WLAN_WORKQUEUE_THREAD_SIZE 2048
 #define RT_WLAN_WORKQUEUE_THREAD_PRIO 22
-#define RT_WLAN_DEV_EVENT_NUM 2
 
 /* Using USB */
 
@@ -183,9 +187,6 @@
 #define LWIP_SO_RCVBUF 1
 #define LWIP_NETIF_LOOPBACK 0
 #define RT_LWIP_USING_PING
-
-/* Modbus master and slave stack */
-
 
 /* AT commands */
 
@@ -269,6 +270,10 @@
 
 #define BSP_USING_UART
 #define BSP_USING_UART0
+#define BSP_USING_UART1
+#define WM_UART1_BAUDRATE 115200
+#define WM_UART1_RX_PIN 31
+#define WM_UART1_TX_PIN 32
 #define BSP_USING_PIN
 #define BSP_USING_WIFI
 
