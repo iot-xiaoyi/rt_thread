@@ -148,11 +148,11 @@
 #define dbg_raw(...)
 #endif /* DBG_ENABLE */
 
-#if (DBG_LEVEL >= DBG_LOG)
+// #if (DBG_LEVEL >= DBG_LOG)
 #define LOG_D(fmt, ...)      dbg_log_line("D", 0, fmt, ##__VA_ARGS__)
-#else
-#define LOG_D(...)
-#endif
+// #else
+// #define LOG_D(...)
+// #endif
 
 #if (DBG_LEVEL >= DBG_INFO)
 #define LOG_I(fmt, ...)      dbg_log_line("I", 32, fmt, ##__VA_ARGS__)

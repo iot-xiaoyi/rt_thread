@@ -173,7 +173,7 @@
 #define RT_LWIP_TCP_WND 10240
 #define RT_LWIP_TCPTHREAD_PRIORITY 10
 #define RT_LWIP_TCPTHREAD_MBOX_SIZE 8
-#define RT_LWIP_TCPTHREAD_STACKSIZE 1024
+#define RT_LWIP_TCPTHREAD_STACKSIZE 4096
 #define LWIP_NO_RX_THREAD
 #define LWIP_NO_TX_THREAD
 #define RT_LWIP_ETHTHREAD_PRIORITY 12
@@ -199,8 +199,8 @@
 /* Utilities */
 
 #define RT_USING_ULOG
-#define ULOG_OUTPUT_LVL_I
-#define ULOG_OUTPUT_LVL 6
+#define ULOG_OUTPUT_LVL_D
+#define ULOG_OUTPUT_LVL 7
 #define ULOG_USING_ISR_LOG
 #define ULOG_ASSERT_ENABLE
 #define ULOG_LINE_BUF_SIZE 128
@@ -217,6 +217,11 @@
 
 /* IoT - internet of things */
 
+#define PKG_USING_WEBCLIENT
+#define WEBCLIENT_DEBUG
+#define WEBCLIENT_USING_SAMPLES
+#define WEBCLIENT_NOT_USE_TLS
+#define PKG_USING_WEBCLIENT_LATEST_VERSION
 
 /* Wi-Fi */
 
@@ -247,7 +252,7 @@
 /* peripheral libraries and drivers */
 
 #define PKG_USING_WM_LIBRARIES
-#define PKG_USING_WM_LIBRARIES_LATEST_VERSION
+#define PKG_USING_WM_LIBRARIES_V100
 
 /* miscellaneous packages */
 

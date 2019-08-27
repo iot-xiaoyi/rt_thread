@@ -2,6 +2,8 @@
     "files.associations": {
         "wm_io.h": "c",
         "socket.h": "c",
-        "sockets.h": "c"
+        "sockets.h": "c",
+        "rtdbg.h": "c",
+        "webclient.h": "c"
     }
 }

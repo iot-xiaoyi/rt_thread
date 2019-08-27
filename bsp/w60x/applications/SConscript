@@ -3,7 +3,7 @@ Import('rtconfig')
 from building import *
 
 cwd = GetCurrentDir()
-src	= Glob('6-udp_unicast/main.c')
+src	= Glob('7-http_client/main.c')
 CPPPATH = [cwd]
 
 group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH)
