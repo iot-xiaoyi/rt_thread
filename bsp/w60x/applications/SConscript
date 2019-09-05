@@ -3,7 +3,7 @@ Import('rtconfig')
 from building import *
 
 cwd = GetCurrentDir()
-src	= Glob('7-http_client/main.c')
+src	= Glob('2-net/6-config_airkiss/*.c')
 CPPPATH = [cwd]
 
 group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH)
