@@ -226,10 +226,9 @@
 #define MQTT_DEBUG
 #define PKG_USING_PAHOMQTT_LATEST
 #define PKG_USING_WEBCLIENT
-#define WEBCLIENT_DEBUG
-#define WEBCLIENT_USING_SAMPLES
-#define WEBCLIENT_NOT_USE_TLS
 #define PKG_USING_WEBCLIENT_LATEST_VERSION
+#define PKG_USING_CJSON
+#define PKG_USING_CJSON_V102
 
 /* Wi-Fi */
 
@@ -241,6 +240,14 @@
 
 /* IoT Cloud */
 
+#define PKG_USING_ONENET
+#define PKG_USING_ONENET_SAMPLE
+#define ONENET_USING_MQTT
+#define ONENET_USING_AUTO_REGISTER
+#define ONENET_REGISTRATION_CODE "90UwmiI5QxPma2ql"
+#define ONENET_INFO_PROID "255820"
+#define ONENET_MASTER_APIKEY "eCQJZEKoyVqA5qV4ef3qTH2OZzo="
+#define PKG_USING_ONENET_LATEST_VERSION
 
 /* security packages */
 
@@ -253,19 +260,35 @@
 
 /* tools packages */
 
+#define PKG_USING_EASYFLASH
+#define PKG_EASYFLASH_ENV
+#define PKG_EASYFLASH_ENV_USING_NORMAL
+#define PKG_EASYFLASH_ENV_SETTING_SIZE 2048
+#define PKG_EASYFLASH_ERASE_GRAN 4096
+#define PKG_EASYFLASH_START_ADDR 0
+#define PKG_EASYFLASH_DEBUG
+#define PKG_USING_EASYFLASH_V321
 
 /* system packages */
 
+#define PKG_USING_FAL
+#define FAL_DEBUG_CONFIG
+#define FAL_DEBUG 1
+#define FAL_PART_HAS_TABLE_CFG
+#define PKG_USING_FAL_LATEST_VERSION
 
 /* peripheral libraries and drivers */
 
-#define PKG_USING_WM_LIBRARIES
-#define PKG_USING_WM_LIBRARIES_V100
 
 /* miscellaneous packages */
 
 
+/* sample package */
+
 /* samples: kernel and components samples */
+
+
+/* example package: hello */
 
 
 /* Env config */
@@ -289,8 +312,6 @@
 #define WM_UART1_TX_PIN 32
 #define BSP_USING_PIN
 #define BSP_USING_WIFI
-
-#define RT_USING_SMARTCONFIG_LIB
 
 /* Offboard Peripheral Drivers */
 

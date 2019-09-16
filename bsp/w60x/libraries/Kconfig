@@ -1,0 +1,23 @@
+menu "External Libraries"
+    menuconfig RT_USING_SMARTCONFIG_LIB
+        bool "Using RT-Thrad SmartConfig Library"
+        select RT_USING_WIFI
+        default n
+
+    if RT_USING_SMARTCONFIG_LIB
+        config RT_USING_SMARTCONFIG_DEMO
+            bool "Using SmartConfig Demo"
+            default y
+    endif
+
+    menuconfig WM_USING_ONESHOT
+        bool "Using winner micro Oneshot"
+        select RT_USING_WIFI
+        default n
+
+    if WM_USING_ONESHOT
+        config WM_USING_ONESHOT_DEMO
+            bool "Using Oneshot Demo"
+            default y
+    endif
+endmenu
