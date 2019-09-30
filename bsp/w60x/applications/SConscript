@@ -3,7 +3,7 @@ Import('rtconfig')
 from building import *
 
 cwd = GetCurrentDir()
-src	= Glob('3-cloud/1-onenet_led/*.c')
+src	= Glob('2-net/7-config_ap/*.c')
 CPPPATH = [cwd]
 
 group = DefineGroup('Applications', src, depend = [''], CPPPATH = CPPPATH)

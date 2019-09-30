@@ -191,7 +191,10 @@
 /* AT commands */
 
 #define LWIP_USING_DHCPD
-#define DHCPD_SERVER_IP "192.168.169.1"
+#define DHCPD_SERVER_IP "192.168.10.1"
+#define DHCPD_USING_ROUTER
+#define LWIP_USING_CUSTOMER_DNS_SERVER
+#define DHCP_DNS_SERVER_IP "192.168.10.1"
 
 /* VBUS(Virtual Software BUS) */
 
