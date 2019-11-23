@@ -247,7 +247,7 @@ config RT_USING_SENSOR
 if RT_USING_SENSOR
     config RT_USING_SENSOR_CMD
         bool "Using Sensor cmd"
-        default y
+        default n
 endif
 
 config RT_USING_TOUCH

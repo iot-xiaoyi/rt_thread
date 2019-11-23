@@ -7,6 +7,16 @@ config SOC_STM32F411RE
 
 menu "Onboard Peripheral Drivers"
 
+config PKG_USING_DHT11
+    bool "Enable DHT11 drivers"
+    default n
+    select RT_USING_PIN
+    if PKG_USING_DHT11
+        config PKG_USING_DHT11_SAMPLE
+            bool "Using dht11 sample"
+            default n
+    endif
+
 endmenu
 
 menu "On-chip Peripheral Drivers"
